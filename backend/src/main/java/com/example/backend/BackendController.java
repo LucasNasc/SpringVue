@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class BackendController {
     private static final Logger LOG = LoggerFactory.getLogger(BackendController.class);
 
-    public static final String HELLO_TEXT = "SpringBoot me Trouxe pra cá !";
+    public static final String HELLO_TEXT = "Meu Nome é lucas !";
 
     @RequestMapping(path = "/hello")
     public @ResponseBody String sayHello() {

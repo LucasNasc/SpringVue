@@ -11,7 +11,7 @@
         name: 'app',
         data () {
             return {
-                msg: 'Bem vindo ao Projeto SeboOnline SpringVue'
+                msg: 'Bem vindo ao Projeto SpringVue'
             }
         }
     }
