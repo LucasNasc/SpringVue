@@ -1,2 +1,2 @@
 # SpringVue
-Projeto Integrando Spring Boot + VueJS
+Projeto Integrando Spring Boot + VueJS com Quasar Framework
