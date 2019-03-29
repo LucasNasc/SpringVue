@@ -6,7 +6,7 @@
             <h3>{{ response }}</h3>
         </ul>
 
-        <button class=”Search__button” @click="callRestService()">Aqui está um Exemplo de Requisição Rest com SpringBoot Vue</button>
+        <q-btn icon="card_giftcard" @click="callRestService()">Aqui está um Exemplo de Requisição Rest com SpringBoot Vue</q-btn>
 
 
     </div>
@@ -15,8 +15,10 @@
 
 <script>
     import {AXIOS} from './http-common'
+    import QBtn from "quasar-framework/src/components/btn/QBtn";
     export default {
         name: 'hello',
+        components: {QBtn},
         props: {hellomsg: {type: String, required: true}},
 
         data() {
@@ -31,8 +33,7 @@
                 AXIOS.get(`hello`)
                     .then(response => {
                         // JSON responses are automatically parsed.
-                        this.response = response.data
-                        console.log(response.data)
+                        this.response = response.data;
                     })
                     .catch(e => {
                         this.errors.push(e)
